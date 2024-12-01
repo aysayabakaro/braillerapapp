@@ -21,11 +21,11 @@ class Screen1 extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.teal,
       appBar: AppBar(
-        title: Text('Text to Braille'),
+        title: const Text('Text to Braille'),
         backgroundColor: Colors.teal,
         elevation: 0,
       ),
-      body: Center(
+      body: const Center(
         child: Webview(url: "https://crocsg.github.io/BrailleRap/"),
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -39,7 +39,7 @@ class Screen1 extends StatelessWidget {
                 context, MaterialPageRoute(builder: (context) => Screen3()));
           }
         },
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.language),
             label: 'Braille',
